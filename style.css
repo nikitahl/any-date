@@ -58,9 +58,8 @@ label {
 }
 
 .content > div {
-  flex: 1 1 50%;
+  flex: 1 1 auto;
 }
-
 
 .time-zone {
   max-width: 77%;
@@ -169,4 +168,19 @@ div.examples {
 
 .footer-text a {
   color: var(--main-color)
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    flex-wrap: wrap;
+  }
+
+  .content > div {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .code-container {
+    min-height: 200px;
+  }
 }
