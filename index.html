@@ -1,0 +1,139 @@
+<!DOCTYPE html><html lang=en><meta name=viewport content="width=device-width, initial-scale=1.0"><title>Any Date | Online Tool to get any date from JavaScript Date object</title><meta author="Nikita Hlopov"><meta description="Any Date | Online Tool to get any date from JavaScript Date object"><link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗓</text></svg>"><link rel=stylesheet href=/any-date/any-date.46aa946b.css><body>
+  <h1>🗓 Any Date | Online tool to get any date from JavaScript Date object</h1>
+
+  <div class=content>
+    <div class=form-container>
+      <form class=options id=options>
+        <div class=optgroup>
+          <label for=current-date>Date:</label>
+          <input type=datetime-local id=current-date>
+        </div>
+        <div class=optgroup>
+          <label for=date-format>Date format:</label>
+          <select name=date-format id=date-format>
+            <option value=local>Local</option>
+            <option value=utc>UTC</option>
+          </select>
+        </div>
+        <div class=optgroup>
+          <label for=locale>Locale:</label>
+          <select class=locale name=locale id=locale>
+            <option value=en-US>English (US)</option>
+            <option value=en-GB>English (UK)</option>
+            <option value=es-ES>Spanish (Spain)</option>
+            <option value=es-MX>Spanish (Mexico)</option>
+            <option value=zh-CN>Chinese (China)</option>
+            <option value=zh-TW>Chinese (Taiwan)</option>
+            <option value=hi-IN>Hindi (India)</option>
+            <option value=ar-SA>Arabic (Saudi Arabia)</option>
+            <option value=fr-FR>French (France)</option>
+            <option value=fr-CA>French (Canada)</option>
+            <option value=de-DE>German (Germany)</option>
+            <option value=pt-BR>Portuguese (Brazil)</option>
+            <option value=pt-PT>Portuguese (Portugal)</option>
+            <option value=ru-RU>Russian (Russia)</option>
+            <option value=ja-JP>Japanese (Japan)</option>
+            <option value=ko-KR>Korean (South Korea)</option>
+            <option value=it-IT>Italian (Italy)</option>
+            <option value=tr-TR>Turkish (Turkey)</option>
+            <option value=vi-VN>Vietnamese (Vietnam)</option>
+            <option value=pl-PL>Polish (Poland)</option>
+          </select>
+        </div>
+        <div class=optgroup>
+          <label for=day-format>Day format:</label>
+          <select name=day-format id=day-format>
+            <option value=long>Long</option>
+            <option value=short>Short</option>
+          </select>
+        </div>
+        <div class=optgroup>
+          <label for=month-format>Month format:</label>
+          <select name=month-format id=month-format>
+            <option value=long>Long</option>
+            <option value=short>Short</option>
+          </select>
+        </div>
+        <div class=optgroup>
+          <label for=time-zone>Time zone:</label>
+          <select class=time-zone name=time-zone id=time-zone>
+            <option value=Africa/Cairo>Africa/Cairo (UTC+3)</option>
+            <option value=Africa/Johannesburg>Africa/Johannesburg (UTC+2)</option>
+            <option value=America/Chicago>America/Chicago (CDT)</option>
+            <option value=America/Los_Angeles>America/Los_Angeles (PDT)</option>
+            <option value=America/Mexico_City>America/Mexico_City (CST)</option>
+            <option value=America/New_York>America/New_York (EDT)</option>
+            <option value=America/Sao_Paulo>America/Sao_Paulo (UTC-3)</option>
+            <option value=Asia/Dubai>Asia/Dubai (UTC+4)</option>
+            <option value=Asia/Kolkata>Asia/Kolkata (UTC+5:30)</option>
+            <option value=Asia/Shanghai>Asia/Shanghai (UTC+8)</option>
+            <option value=Asia/Tokyo>Asia/Tokyo (UTC+9)</option>
+            <option value=Australia/Perth>Australia/Perth (UTC+8)</option>
+            <option value=Australia/Sydney>Australia/Sydney (UTC+10)</option>
+            <option value=Europe/Berlin>Europe/Berlin (UTC+2)</option>
+            <option value=Europe/London>Europe/London (UTC+1)</option>
+            <option value=Europe/Moscow>Europe/Moscow (UTC+3)</option>
+            <option value=Europe/Paris>Europe/Paris (UTC+2)</option>
+            <option value=Pacific/Auckland>Pacific/Auckland (UTC+12)</option>
+            <option value=Pacific/Honolulu>Pacific/Honolulu (HST)</option>
+            <option value=UTC>UTC (UTC)</option>
+          </select>
+        </div>
+        <div class=optgroup>
+          <label for=time-zone-format>Time zone format:</label>
+          <select name=time-zone-format id=time-zone-format>
+            <option value=short>Abbreviation</option>
+            <option value=long>Full name</option>
+            <option value=shortOffset>Numeric offset only</option>
+            <option value=longOffset>Verbose offset</option>
+            <option value=shortGeneric>Generic time zone</option>
+            <option value=longGeneric>Full generic name</option>
+          </select>
+        </div>
+        <div class=optgroup>
+          <label for=time-format>Time format:</label>
+          <select name=time-format id=time-format>
+            <option value=false>24h</option>
+            <option value=true>AM/PM</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div class=examples>
+      <p class=example id=seconds>Seconds</p>
+      <p class=example id=minutes>Minutes</p>
+      <p class=example id=hours>Hours</p>
+      <p class=example id=weekday>Day of the week</p>
+      <p class=example id=monthday>Day of the month</p>
+      <p class=example id=dayname>Day name</p>
+      <p class=example id=month>Month number</p>
+      <p class=example id=monthname>Month name</p>
+      <p class=example id=year>Year</p>
+      <p class=example id=time>Time (formatted)</p>
+      <p class=example id=date>Date (formatted)</p>
+      <p class=example id=datetime>Date + Time (formatted)</p>
+    </div>
+    <div class=output>
+      <div class=result>
+        <output id=output>Result:</output>
+      </div>
+      <div class=code-container>
+        <code>
+          <pre class=code id=code></pre>
+        </code>
+        <button class=copy id=copy>Copy code</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p class=links>
+      MDN docs: 
+      <a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#date_components_and_time_zones target=_blank rel="noopener noreferrer">Date components and time zones</a>
+      •
+      <a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#parameters target=_blank rel="noopener noreferrer">Date and time format parameters</a>
+    </p>
+    
+    <p class=footer-text>Made by <a href=https://twitter.com/nikita_hlopov>@nikitahl</a> | View on <a href=https://github.com/nikitahl/any-date>GitHub</a></p>
+  </footer>
+  <script src=/any-date/any-date.456fadbd.js></script>
+
